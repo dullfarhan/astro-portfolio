@@ -1,0 +1,37 @@
+<div class="navLinks">
+  <li>Home</li>
+  <li>Experience </li>
+  <li>Projects</li>
+</div>
+<style>
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    
+    color: #6c7789;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  li::before {
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: #6c7789;
+    margin-right: 5px;
+  }
+  li:active, li:hover{
+    color: inherit;
+  }
+  li:active::before,  li:hover::before{
+    width: 30px;
+    background-color: #ffffff;
+  }
+  
+</style>
