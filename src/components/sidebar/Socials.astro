@@ -1,0 +1,40 @@
+---
+import SocialItem from "./SocialItem.astro";
+const arr = [
+ 
+  {
+    link: "https://www.linkedin.com/in/dullfarhan",
+    tooltip: "linkedin",
+    image: "/socials/linkedin.svg",
+  }, {
+    link: "https://www.instagram.com/dullfarhan/?hl=en",
+    tooltip: "instagarm",
+    image: "/socials/instagarm.svg",
+  }, {
+    link: "https://www.github.com/dullfarhan",
+    tooltip: "github",
+    image: "/socials/github.svg",
+  },
+];
+---
+
+<div class="socials">
+  {
+    arr.map((ar) => (
+      <SocialItem link={ar.link} tooltip={ar.tooltip} image={ar.image} />
+    ))
+  }
+</div>
+<style>
+  .socials {
+    position: absolute;
+    
+    bottom: 0px;
+    margin-bottom: 10%;
+    margin-top: auto;
+    list-style: none;
+    /* border: red solid 10px; */
+    display: flex;
+    flex-direction: row;
+  }
+</style>

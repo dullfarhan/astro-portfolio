@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+
+const { link, image, tooltip } = Astro.props;
+---
+
+<div class="social-item">
+  <li>
+    <a href={link} target="_blank">
+      <Image  src={image} alt={tooltip} width="24" height="24" />
+    </a>
+  </li>
+</div>
+<style>
+  .social-item {
+    margin: 5px;
+    margin-right: 20px;
+  }
+</style>

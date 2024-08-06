@@ -1,26 +1,29 @@
 ---
 import Intro from "./Intro.astro";
 import Navbar from "./Navbar.astro";
+import Socials from "./Socials.astro";
 ---
 
 <style>
   .sidebar {
     /* color: rgb(27, 143, 143); */
-    
+
     /* border: 5px solid red; */
     position: fixed;
     height: 100%;
     width: 50%;
   }
+
   .sidebar-inside {
     margin-left: 40%;
-    position: relative  }
+    height: 100%;
+  }
 </style>
 
 <div class="sidebar">
   <div class="sidebar-inside">
-    <Intro/>
-    <Navbar>
-    wrewererwerwe
+    <Intro />
+    <Navbar />
+    <Socials />
   </div>
 </div>
