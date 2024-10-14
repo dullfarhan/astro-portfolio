@@ -12,16 +12,31 @@
     
     color: #6c7789;
     font-size: 12px;
+    padding-bottom: 20px;
     line-height: 16px;
     font-weight: 700;
     margin: 5px 0;
     display: flex;
     align-items: center;
     text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  @keyframes ami  {
+  0%   { width: 5px;}
+  10%  { width: 10px;}
+  30%  { width: 15px;}
+  40%  { width: 20px;}
+  50%  { width: 25px;}
+  60%  { width: 30px;}
+  70%  { width: 35px;}
+  85%  { width: 40px;}
+  90% { width: 45px;}
+  100% { width: 50px;}
+
   }
   li::before {
     content: "";
-    width: 15px;
+    width: 25px;
     height: 1px;
     background-color: #6c7789;
     margin-right: 5px;
@@ -30,8 +45,11 @@
     color: inherit;
   }
   li:active::before,  li:hover::before{
-    width: 30px;
+    width: 50px;
     background-color: #ffffff;
+    animation-name: ami;
+    animation-duration: 0.17s;
+     /* timing-function delay iteration-count direction fill-mode; */
   }
   
 </style>
